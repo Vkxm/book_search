@@ -1,52 +1,27 @@
-# Book Search
+# 🌗 Search & Pagination Web App
 
-- **Project Overview**
-- **Features**
-- **Tech Stack**
-- **Installation & Setup**
-- **Folder Structure**
-- **Usage Guide**
-- **Contributing**
-- **Known Issues & Fixes**
-- **Future Improvements**
-- **License**
-
----
-
-# Project Documentation
-
-## 📖 Overview
-
-This project is a web application with **light/dark mode support**, a **centralized search bar**, and **conditional pagination** that only appears when search results are displayed. The design ensures a clean UI with full-width background coverage in both themes.
+A minimal web application with **light/dark mode toggle**, **centered search bar**, and **conditional pagination**.  
+Pagination only appears **after search results** are displayed, keeping the homepage clean.
 
 ---
 
 ## ✨ Features
 
-- 🌗 **Dark/Light Mode Toggle** – Full-width coverage, no leftover white spaces.
-- 🔍 **Search Bar** – Center-aligned on the homepage.
-- 📄 **Conditional Pagination** – Pagination buttons only appear when search results are present.
-- ⚡ **Responsive Layout** – Works seamlessly on desktop and mobile.
-- 🎨 **Minimal & Clean UI** – Focused on simplicity and usability.
+- 🌙 **Dark/Light Mode Toggle** (full-width, no white gaps)
+- 🔍 **Centered Search Bar** on homepage
+- 📄 **Pagination only after search results**
+- 📱 **Responsive & Clean UI**
 
 ---
 
-## 🛠️ Tech Stack
-
-- **Frontend:** HTML, CSS (Tailwind/Custom), JavaScript
-- **Build Tool:** Vite
-- **Runtime:** Node.js (v22 recommended)
-
----
-
-## 🚀 Installation & Setup
+## 🚀 Getting Started
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) v22+
+- Node.js **v22+**
 - npm (comes with Node.js)
 
-### Steps
+### Installation
 
 ```bash
 # Clone repository
@@ -56,9 +31,6 @@ cd book_search
 # Install dependencies
 npm install
 
-# Start development server
+# Start dev server
 npm run dev
-
-# Build for production
-npm run build
 ```
