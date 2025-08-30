@@ -22,8 +22,8 @@ Pagination only appears **after search results** are displayed, keeping the home
 ### Installation
 ```bash
 # Clone repository
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+git clone https://github.com/Vkxm/book_search.git
+cd book_search
 
 # Install dependencies
 npm install
