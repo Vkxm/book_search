@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
+  color: #222;
+  transition: background 0.3s, color 0.3s;
+}
+
+.app {
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.theme-toggle {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #0077ff;
+  color: white;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.theme-toggle:hover {
+  background: #005fcc;
+}
+
+/* ===== Cards (BookList) ===== */
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+}
+
+.book-card {
+  background: white;
+  border-radius: 12px;
+  padding: 12px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s, background 0.3s;
+}
+.book-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.book-card img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* ===== Book Details ===== */
+.book-details {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.book-details img {
+  max-width: 200px;
+  display: block;
+  margin: 0 auto 20px;
+}
+.book-details button {
+  margin-top: 20px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #0077ff;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+.book-details button:hover {
+  background: #005fcc;
+}
+
+/* ===== Dark Theme ===== */
+.app.dark {
+  background: #121212;
+  color: #eee;
+}
+
+.app.dark .book-card {
+  background: #1e1e1e;
+  color: #eee;
+}
+.app.dark .book-card:hover {
+  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.1);
+}
+
+.app.dark .book-details {
+  background: #1e1e1e;
+  color: #eee;
+}
+
+.app.dark .theme-toggle {
+  background: #ff9800;
+}
+.app.dark .theme-toggle:hover {
+  background: #e68900;
+}
